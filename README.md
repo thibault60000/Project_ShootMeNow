@@ -1,8 +1,14 @@
-# Project_ShootMeNow
-A revolutionary action adventure game
+<h1>Project_ShootMeNow</h1>
 
-# COMMIT 1 : BASES DU PROJET
+<h2>A revolutionary action adventure game</h2>
 
--> Ajout du joueur et des mouvements principaux
--> Ajout de la rotation du joueur en fonction de la souris
--> Ajout d'une arme (temporaire) qui apparait sur le joueur lors du démarrage de la partie
+<p>Ceci est un projet inspiré des mécaniques de " The Binding Of Isaac" avec des graphismes de type "low poly"</p>
+
+
+<h3>COMMIT 1 : BASES DU PROJET</h3>
+
+<ul>
+  <li>Ajout du joueur et des mouvements principaux</li>
+  <li>Ajout de la rotation du joueur en fonction de la souris</li>
+  <li>Ajout d'une arme (temporaire) qui apparait sur le joueur lors du démarrage de la partie</li>
+</ul>
