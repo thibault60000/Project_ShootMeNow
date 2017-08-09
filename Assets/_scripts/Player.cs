@@ -3,20 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerController))]
+[RequireComponent(typeof(GunController))]
 public class Player : MonoBehaviour {
 
+    // PUBLIC
     public float moveSpeed = 5f;
+
+    // OBJECTS 
     PlayerController controller;
+    GunController gunController;
     Camera viewCamera;
 
 	// INITIALISATION
 	void Start () {
         controller = GetComponent<PlayerController>();
+        gunController = GetComponent<GunController>();
         viewCamera = Camera.main;
 	}
 	
 	// UPDATE (UNE FOIS PAR FRAME)
 	void Update () {
+        // Gérer les Inputs pour le mouvement
         Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         Vector3 moveVelocity = moveInput.normalized.normalized * moveSpeed;
         controller.Move(moveVelocity);
@@ -31,6 +38,12 @@ public class Player : MonoBehaviour {
             Vector3 point = ray.GetPoint(rayDistance);
             Debug.DrawLine(ray.origin, point, Color.red);
             controller.LookAt(point);
+        }
+
+        // Gérer les Inputs liés à l'arme
+        if (Input.GetMouseButton(0))
+        {
+            gunController.Shoot();
         }
 	}
 }
