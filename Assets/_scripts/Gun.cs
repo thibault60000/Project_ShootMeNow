@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour {
 
-    // PUBLIC
-    public Transform muzzle;
-    public Projectile projectile;
+    // VARIABLES 
     public float msBetweenShots = 100f;
     public float muzzleVelocity = 35f;
-
     float nextShotTime;
+
+    // OBJECTS 
+    public Transform muzzle;
+    public Projectile projectile;
 
     // TIRER
     public void Shoot()

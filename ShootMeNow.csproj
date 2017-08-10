@@ -85,6 +85,8 @@
     <Compile Include="Assets\_scripts\Enemy.cs" />
     <Compile Include="Assets\_scripts\Gun.cs" />
     <Compile Include="Assets\_scripts\GunController.cs" />
+    <Compile Include="Assets\_scripts\IDamageables.cs" />
+    <Compile Include="Assets\_scripts\LivingEntity.cs" />
     <Compile Include="Assets\_scripts\Player.cs" />
     <Compile Include="Assets\_scripts\PlayerController.cs" />
     <Compile Include="Assets\_scripts\Projectile.cs" />

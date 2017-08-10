@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // APPELLEE A CHAQUE FRAME (POUR LES FORMES)
-    public void FixedUpdate()
+    void FixedUpdate()
     {
         myRigidbody.MovePosition(myRigidbody.position + velocity * Time.fixedDeltaTime);
     }

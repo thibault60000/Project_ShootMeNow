@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour {
 
-    // PUBLIC 
+    // VARIABLES 
     float speed = 10f;
+    float damage = 1;
 
     // OBJECTS 
     public LayerMask collisionMask;
@@ -16,6 +17,7 @@ public class Projectile : MonoBehaviour {
         speed = newSpeed;
     }
 
+
     // UPDATE
     private void Update()
     {
@@ -23,6 +25,7 @@ public class Projectile : MonoBehaviour {
         transform.Translate(Vector3.forward * moveDistance);
         CheckCollisions(moveDistance);
     }
+
 
     // Fonction qui test les collisions du projectile
     void CheckCollisions(float moveDistance)
@@ -37,9 +40,15 @@ public class Projectile : MonoBehaviour {
         }
     }
 
+
     // Fonction executée si le projectile touche quelque chose
     void OnHitObject(RaycastHit hit)
     {
+        IDamageables damageableObject = hit.collider.GetComponent<IDamageables>();
+        if(damageableObject != null)
+        {
+            damageableObject.TakeHit(damage, hit);
+        }
         GameObject.Destroy(gameObject);
     }
 }
