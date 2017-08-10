@@ -15,7 +15,7 @@
 
 <h3>COMMIT 2 : PROJECTILE</h3>
 
-<p> Ajout de projectile sur l'arme 
+<ul><li> Ajout de projectile sur l'arme </li></ul> 
 
 
 <h3>COMMIT 3 : NAVMESH ET ENEMY</h3>
@@ -25,4 +25,13 @@
   <li>Ajout d'un Enemy et assigné un "NavMeshAgent" à cet Enemy</li>
   <li>Ajout d'une simple IA à l'Enemy pour foncé vers le joueur</li>
   <li>Ajout d'un test pour savoir si un projectile touche un Enemy ou non</li>
+</ul>
+
+<h3>COMMIT 3 : NAVMESH ET ENEMY</h3>
+
+<ul>
+  <li>Ajout d'un point de spawn pour les Enemys</li>
+  <li>Créer un système de délais entre un certain nombre d'Enemy (sous forme de vagues)</li>
+  <li>Ajout des dégats causés à un Enemy le tuant ainsi</li>
+  <li>Ajout de texture avec HeightMap, NormalMap, Occlusion, Metallic </li>
 </ul>
