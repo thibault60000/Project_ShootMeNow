@@ -1,4 +1,4 @@
-<h1>Project_ShootMeNow</h1>
+<h1>Project_ShootMeNow (v.0.1a)</h1>
 
 <h2>A revolutionary action adventure game</h2>
 
