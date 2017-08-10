@@ -27,7 +27,7 @@
   <li>Ajout d'un test pour savoir si un projectile touche un Enemy ou non</li>
 </ul>
 
-<h3>COMMIT 3 : NAVMESH ET ENEMY</h3>
+<h3>COMMIT 4 : SPAWN & KILL ENEMYS</h3>
 
 <ul>
   <li>Ajout d'un point de spawn pour les Enemys</li>
